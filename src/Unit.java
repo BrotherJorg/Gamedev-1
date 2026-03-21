@@ -22,4 +22,16 @@ public class Unit  {
     public void moveRight() {
         gridX += 1;
     }
+
+    public void moveLeft() {
+        gridX -= 1;
+    }
+
+    public void moveUp() {
+        gridY -= 1;
+    }
+
+    public void moveDown() {
+        gridY += 1;
+    }
 }
