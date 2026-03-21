@@ -6,20 +6,29 @@ import java.util.ArrayList;
 
 public class GamePanel extends JPanel {
 
+  public void testMove(){
+    units.get(0).moveRight();
+      System.out.println("moving...");
+    repaint();
+  }
+
   ArrayList<Unit> units;
+
+
 
   public GamePanel(){
     units = new ArrayList<>();
-    units.add(new Unit(0,0, Color.BLUE));f
+    units.add(new Unit(0,0, Color.BLUE));
     units.add(new Unit(1,1, Color.GREEN));
     units.add(new Unit(9,9, Color.YELLOW));
+    units.add(new Unit(9,2, Color.RED));
   }
 
 
   @Override
   protected void paintComponent(Graphics g) {
     super.paintComponent(g);
-t
+
     
     int rows = 10;
     int cols = 10;

@@ -7,7 +7,9 @@ public class MainGame {
 
         GamePanel panel = new GamePanel();
         frame.add(panel);
-
+        
+        panel.testMove();
+        
         frame.setVisible(true);
     }
 }

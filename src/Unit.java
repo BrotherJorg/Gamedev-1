@@ -18,4 +18,8 @@ public class Unit  {
         g.setColor(color);
         g.fillRect(pixelx, pixely, dimension-gap, dimension-gap);
     }
+
+    public void moveRight() {
+        gridX += 1;
+    }
 }
